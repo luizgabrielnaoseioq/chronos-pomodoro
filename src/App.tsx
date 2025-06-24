@@ -1,19 +1,22 @@
-import './styles/theme.css'
-import './styles/global.css'
 import { Container } from './components/Container';
 import { Heading } from './components/Heading';
+import { Logo } from './components/Logo'
+
+import './styles/theme.css'
+import './styles/global.css'
 
 function App() {
- return<>
+ return
+ <>
+    <Container>
+      <Logo/>
+    </Container>
 
-  <Container>
-    <Heading> Testando meu componente Heading</Heading>
-  </Container>
-
-  <Container>
-    <Heading> Testando meu componente Heading</Heading>
-  </Container>
-
+    <Container>
+      <Heading>
+        Menu
+      </Heading>
+    </Container>
  </>
 }
 
