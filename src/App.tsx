@@ -5,6 +5,7 @@ import { Menu } from './components/Menu';
 import './styles/theme.css'
 import './styles/global.css'
 import { CountDown } from './components/CountDown';
+import { DefaultInput } from './components/DefaultInput';
 
 export function App() {
   return (
@@ -25,10 +26,7 @@ export function App() {
         <form className='form'
         action="">
           <div className='formRow'>
-            <label htmlFor="meuInput">
-              Task:
-            </label>
-            <input id='meuInput' type="text" />
+            <DefaultInput id='inputTask' type='email' exmp='Tarefa de exemplo'/>
           </div>
 
           <div className='formRow'>
