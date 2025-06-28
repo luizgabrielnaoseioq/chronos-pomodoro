@@ -26,7 +26,12 @@ export function App() {
         <form className='form'
         action="">
           <div className='formRow'>
-            <DefaultInput id='inputTask' type='email' exmp='Tarefa de exemplo'/>
+            <DefaultInput 
+            id='meuInput' 
+            type='text' 
+            labelText='Task'
+            placeholder='Digite Algo'
+            />
           </div>
 
           <div className='formRow'>
@@ -34,8 +39,7 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <p>Ciclos</p>
-            <p>0 0 0 0</p>
+            
           </div>
 
           <div className='formRow'>
