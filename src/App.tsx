@@ -1,51 +1,49 @@
-import { Container } from './components/Container';
-import { Logo } from './components/Logo'
-import { Menu } from './components/Menu';
+import { Container } from "./components/Container";
+import { Logo } from "./components/Logo";
+import { Menu } from "./components/Menu";
 
-import './styles/theme.css'
-import './styles/global.css'
-import { CountDown } from './components/CountDown';
-import { DefaultInput } from './components/DefaultInput';
+import "./styles/theme.css";
+import "./styles/global.css";
+import { CountDown } from "./components/CountDown";
+import { DefaultInput } from "./components/DefaultInput";
+import { Cycles } from "./components/Cycles";
 
 export function App() {
   return (
     <>
       <Container>
-        <Logo/>
+        <Logo />
       </Container>
 
       <Container>
-        <Menu/>
+        <Menu />
       </Container>
 
       <Container>
-        <CountDown/>
+        <CountDown />
       </Container>
 
       <Container>
-        <form className='form'
-        action="">
-          <div className='formRow'>
-            <DefaultInput 
-            id='meuInput' 
-            type='text' 
-            labelText='Task'
-            placeholder='Digite Algo'
+        <form className="form" action="">
+          <div className="formRow">
+            <DefaultInput
+              id="meuInput"
+              type="text"
+              labelText="Task:"
+              placeholder="Digite Algo"
             />
           </div>
 
-          <div className='formRow'>
+          <div className="formRow">
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
 
-          <div className='formRow'>
-            
+          <div className="formRow">
+            <Cycles />
           </div>
 
-          <div className='formRow'>
-            <button>
-              enviar
-            </button>
+          <div className="formRow">
+            <button>enviar</button>
           </div>
         </form>
       </Container>
