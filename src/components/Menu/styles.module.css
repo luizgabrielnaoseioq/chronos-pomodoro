@@ -1,8 +1,9 @@
 .menu {
-  flex: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
+  margin-top: 2.1rem;
 }
 
 .menuLink {
