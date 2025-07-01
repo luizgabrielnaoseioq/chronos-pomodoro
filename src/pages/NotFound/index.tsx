@@ -8,7 +8,7 @@ export function NotFound() {
     <MainTemplate>
       <Container>
         <GenericHtml>
-          <Heading>404 - Página não encontrada 🚀</Heading>Add commentMore actions
+          <Heading>404 - Página não encontrada 🚀</Heading>
           <p>
             Opa! Parece que a página que você está tentando acessar não existe.
             Talvez ela tenha tirado férias, resolvido explorar o universo ou se
