@@ -1,11 +1,11 @@
-import * as TaskStateModel from './TaskStateModel';
+import type { TaskStateModel } from "./TaskStateModel";
 
 export type TaskModel = {
   id: string;
   name: string;
   duration: number;
-  startDate: number; 
-  completeDate: number | null;
-  interruptDate: number | null;
-  type: keyof TaskStateModel.TaskStateModel['config'];
-}
+  startDate: number;
+  completeDate: number | null; // quando o timer chega ao final
+  interruptDate: number | null; // quando a task for interrompida
+  type: keyof TaskStateModel['config'];
+};

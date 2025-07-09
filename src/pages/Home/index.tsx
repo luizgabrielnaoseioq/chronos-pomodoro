@@ -1,18 +1,26 @@
-import { Container } from "../../components/Container";
-import { CountDown } from "../../components/CountDown";
-import { MainForm } from "../../components/MainForm";
-import { MainTemplate } from "../../templates/MainTemplate";
+import { CountDown } from '../../components/CountDown';
+import { MainTemplate } from '../../templates/MainTemplate';
+import { MainForm } from '../../components/MainForm';
+import { Container } from '../../components/Container';
+import type { TaskStateModel } from '../../models/TaskStateModel';
 
-export function Home() {
+export type HomeProps = {
+  state: TaskStateModel;
+  setState: React.Dispatch<React.SetStateAction<TaskStateModel>>;
+};
+
+export function Home(props: HomeProps) {
+  // Destructuring props to extract state and setState
   return (
     <MainTemplate>
       <Container>
-        <CountDown />
+        <CountDown{...props}/>
       </Container>
-
+      
       <Container>
-        <MainForm/>
+        <MainForm />
       </Container>
     </MainTemplate>
   );
+
 }
